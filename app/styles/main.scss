@@ -1,0 +1,95 @@
+// modules & sections
+
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import"../../node_modules/bootstrap-4-grid/scss/grid";
+@import "modules/sprite";
+@import "functions";
+@import "reset";
+@import "fonts";
+@import "variables";
+
+
+
+
+html {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  line-height: 1.2;
+  font-family: $BrandonGrotesqueRegular, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+%section {
+    position: relative;
+    padding: 40px 0;
+}
+
+h1 {
+  font-size: 66px;
+  font-family: $BrandonGrotesqueBold, sans-serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: $BrandonGrotesqueLight, sans-serif;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: $BrandonGrotesqueLight, sans-serif;
+  font-weight: normal;
+  span {
+    font-family: $BrandonGrotesqueBold, sans-serif;
+  }
+}
+h4 {
+  font-size: 22px;
+  font-family: $BrandonGrotesqueMedium, sans-serif;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: $BrandonGrotesqueBold, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+@import "sections/head-section";
+@import "sections/service-section";
+@import "sections/odds-section";
+@import "sections/client-section";
+@import "sections/logo-section";
+@import "sections/amazing-section";
+@import "sections/contact-section";
+@import "sections/footer-section";

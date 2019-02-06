@@ -1,0 +1,163 @@
+.contact-section {
+  @extend %section;
+  background: #7690c5;
+  color: #ffffff;
+  text-align: left;
+  a {
+    color: #ffffff;
+  }
+}
+
+.contact-content-col {
+  & > * {
+    margin-bottom: 30px;
+  }
+  padding-bottom: 0;
+}
+
+.contact-content-col,
+.contact-form-col {
+@extend .col-12, .col-lg-6;
+}
+
+.contact-list {
+  @extend .row;
+  justify-content: center;
+  li {
+    @extend .col-12, .col-sm-6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    &::before {
+      content: '';
+      display: inline-flex;
+      position: relative;
+      width: 25px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      -webkit-background-size: contain;
+      background-size: contain;
+      margin-right: 8px;
+    }
+    &:hover {
+      color: #7fe8dd;
+    }
+  }
+}
+
+.contact-list-phone {
+  a {
+    &::before {
+      background-image: url(../../images/mobile-icon.png);
+    }
+  }
+}
+
+.contact-list-mail {
+  a {
+    &::before {
+      background-image: url(../../images/mail-icon.png);
+    }
+  }
+}
+
+.contact-list-twitter {
+  a {
+    &::before {
+      background-image: url(../../images/twitter.png);
+    }
+  }
+}
+
+.contact-list-facebook {
+  a {
+    &::before {
+      background-image: url(../../images/facebook.png);
+    }
+  }
+}
+
+.contact-list-google {
+  a {
+    &::before {
+      background-image: url(../../images/google+.png);
+    }
+  }
+}
+
+.contact-list-pinterest {
+  a {
+    &::before {
+      background-image: url(../../images/pinterest.png);
+    }
+  }
+}
+
+.contact-form-col {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.contact-form {
+  & > * {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-name-input {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contact-mail-input {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  border-radius: 4px;
+
+}
+
+.contact-message-textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contact-form-btn {
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  border:solid #ffffff 3px;
+  color: #ffffff;
+  font-family: $BrandonGrotesqueRegular, sans-serif;
+  font-size: 18px;
+  &:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .contact-section {
+    text-align: center;
+  }
+  .contact-form-col {
+    max-width: 500px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,157 @@
+.amazing-section {
+  @extend %section;
+  background: #000000;
+  color: #ffffff;
+  .row {
+    justify-content: center;
+  }
+  h4 {
+    color: #777777;
+    font-weight: normal;
+  }
+  h5 {
+    padding: 10px 10px 5px;
+  }
+  .col-12 {
+    padding-bottom: 70px;
+  }
+}
+
+
+
+.amazing-content {
+  @extend .col-6, .col-sm-4;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  span {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+}
+
+.amazing-content-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-image: url(../../images/520455137.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.amazing-content-list {
+  display: inline-flex;
+  li {
+    margin-right: 5px;
+  }
+  a {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 15px;
+      height: 15px;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+  }
+}
+
+.amazing-content-list-twitter {
+  a {
+    &:hover {
+      background: #7fe8dd;
+      border: 4px solid #7fe8dd;
+    }
+    &::before {
+      background-image: url(../../images/twitter.png);
+    }
+  }
+}
+
+.amazing-content-list-facebook {
+  a {
+    &:hover {
+      background: #7fe8dd;
+      border: 4px solid #7fe8dd;
+    }
+    &::before {
+      background-image: url(../../images/facebook.png);
+    }
+  }
+}
+
+.amazing-content-list-pinterest {
+  a {
+    &:hover {
+      background: #7fe8dd;
+      border: 4px solid #7fe8dd;
+    }
+    &::before {
+      background-image: url(../../images/pinterest.png);
+    }
+  }
+}
+
+.amazing-content-list-google {
+  a {
+    &:hover {
+      background: #7fe8dd;
+      border: 4px solid #7fe8dd;
+    }
+    &::before {
+      background-image: url(../../images/google+.png);
+    }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .amazing-content-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background-image: url(../../images/520455137.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .amazing-section {
+    h5 {
+      font-size: 14px;
+      padding: 0;
+    }
+  }
+  p {
+    font-size: 15px;
+  }
+  .amazing-content-list {
+    a {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
